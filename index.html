@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Insta Assignment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <style>
+        .picture-container {
+            width: 250px;
+            height: 250px;
+            background: red;
+            overflow: hidden;
+            position: relative;
+        }
+        .picture-container>img {
+            position: absolute;
+            left: -25%;
+            top: -25%;
+        }
+
+        .w-250 {
+            width: 250px;
+        }
+
+        .d-flex>div {
+            margin: 0.5rem auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d-flex flex-column justify-content-center w-100">
+        <div class="picture-container">
+            <img src="http://cdn8.openculture.com/wp-content/uploads/2014/04/Van-Gogh-Self-Portrait.jpg">
+        </div>
+        <div class="w-250">
+            <button class="btn btn-dark" id="like-btn">Like</button>
+            <span class="badge badge-default" id="like-count">-</span>
+            <a href="#" id="comment-btn" class="float-right">Comment</a>
+        </div>
+        <div class="w-250 d-none" id="form-box">
+            <form id="form-comment">
+                <div class="form-group">
+                    <textarea class="form-control w-250"></textarea>
+                </div>
+                <button class="btn btn-dark" type="submit">Post Comment</button>
+            </form>
+        </div>
+        <div class="w-250" id="comments-disp-box">
+        </div>
+        <div class="w-250">
+            <button type="button" class="btn btn-danger btn-sm btn-block" id="del_session">Delete session</button>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt reiciendis aliquid enim ad? Id placeat voluptatibus laborum dolores inventore voluptates at natus, excepturi minus dolor, modi alias non quis enim. -->
+</body>
+
+</html>
